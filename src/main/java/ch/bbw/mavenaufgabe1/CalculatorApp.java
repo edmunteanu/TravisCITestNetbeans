@@ -13,20 +13,43 @@ import java.util.Scanner;
  */
 public class CalculatorApp {
     
+    private boolean running;
+    
     public CalculatorApp() {
-        
+        running = true;
+    }
+
+    public boolean isRunning() {
+        return running;
+    }
+
+    public void setRunning(boolean running) {
+        this.running = running;
     }
     
     public static void main(String[] args) {
-        
+        CalculatorApp cA = new CalculatorApp();
         Calculator c = new Calculator();
         Scanner sc = new Scanner(System.in);
+        String text;
+        double zahl1 = 0.0;
+        double zahl2 = 0.0;
         System.out.println("Willkommen zu meinem Calculator. Um es auszuschalten, geben sie quit ein.");
-        while (!sc.nextLine().equals("quit")) {
+        while (cA.isRunning()) {
             System.out.print("Bitte geben Sie die erste Zahl ein: ");
-            double zahl1 = Double.parseDouble(sc.nextLine());
+            text = sc.nextLine();
+            if (!text.equals("quit")) {
+                zahl1 = Double.parseDouble(text);
+            } else {
+                cA.setRunning(false);
+            }
             System.out.print("Bitte geben Sie die zweite Zahl ein: ");
-            double zahl2 = Double.parseDouble(sc.nextLine());
+            text = sc.nextLine();
+            if (!text.equals("quit")) {
+                zahl1 = Double.parseDouble(text);
+            } else {
+                cA.setRunning(false);
+            }
             double resultat = c.addition(zahl1, zahl2);
             System.out.println("Das Resultat ist " + resultat);
         }
