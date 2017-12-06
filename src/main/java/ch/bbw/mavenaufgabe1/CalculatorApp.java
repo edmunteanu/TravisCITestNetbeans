@@ -24,9 +24,9 @@ public class CalculatorApp {
         System.out.println("Willkommen zu meinem Calculator. Um es auszuschalten, geben sie quit ein.");
         while (!sc.equals("quit")) {
             System.out.print("Bitte geben Sie die erste Zahl ein: ");
-            double zahl1 = sc.nextDouble();
+            double zahl1 = Double.parseDouble(sc.nextLine());
             System.out.print("Bitte geben Sie die zweite Zahl ein: ");
-            double zahl2 = sc.nextDouble();
+            double zahl2 = Double.parseDouble(sc.nextLine());
             double resultat = c.addition(zahl1, zahl2);
             System.out.println("Das Resultat ist " + resultat);
         }

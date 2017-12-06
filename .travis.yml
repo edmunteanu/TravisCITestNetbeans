@@ -5,6 +5,6 @@ deploy:
   provider: releases
   api_key:
     secure: Ansekl5zLs3XFtxdkNe85MolskqE5UySsbWHhQzz/URtjooSf8YfOW0hOQKi7qWOcVKSMVHzBrNfkDxHPkUN01PW4aEUH7kilZ8LAQAHE+4cLcAzK8x5r3JaVeJHH5IAXZ4v9sapQXMWPJfWV3UBofzwwYG3ktZViJRMtM1toAdU2uLAbkk4Uv1N+tu+WqFS2yss6ayO+GyRvRW+7aHIk7Suwd62v8nS7Nu5nuYrlIlcDh0N+D+oNjSrsi5bFObTDnLOM9pqo2UVKcyiHiDeDfYx3MsGFx9aaFcMvzNBaFjByKuy/sh3BwbGzMn9KIXzcR9/JlN42EM07T2Ks+WagGHQ8ebD3yaGpEJQFcrXHlSvN6ktSR7Tf0oEHaBERFG1D7Ts4vPrQFcFKNmmPYlyktMxHqLPLmy8eyPSoGQZOkT4DZzLuJimCY5G6yEHbhqp3J5N6r1Fvg36vSxenxRutLwDpAAUVblaQ/cdSXzqCbM/ymrVQAxY4H3BNRLTKnKeltxp87rJLoc19njXM6AV1UsAeoSAUvXadBE75B4c5A/9od0kbvYwcCkDC1yBzAnYk3A+ko1wUph3wsvZCGrh6WWd98cCBypk3JyVY/FhkjWvNRn8nFP1wzDM1+aGLEMzUzdXtN9RVDN9TPHtM+1PHR2DvRYYpr2irPqQ3/+W2qA=
-  file: '"D:\Festplatte\BBW 3. Jahr\BBW Sem-I\Modul 426\05_ContinuousIntegration\Netbeans\MavenAufgabe1\target\MavenAufgabe1-1.0-SNAPSHOT.jar"'
+  file: /home/travis/.m2/repository/MavenAufgabe1-1.0-SNAPSHOT.jar
   on:
     repo: edmunteanu/TravisCITestNetbeans
