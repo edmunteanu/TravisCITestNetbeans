@@ -1,11 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ch.bbw.mavenaufgabe1;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  *
@@ -13,19 +8,17 @@ import static org.junit.Assert.*;
  */
 public class CalculatorTest {
 
-    public CalculatorTest() {
-    }
-
+    /**
+     * Test of addition method, of class Calculator.
+     */
     @org.junit.Test
-    public void testSummeZweiPositive() {
-        double a = 5.0;
-        double b = 5.0;
-
+    public void testAddition() {
+        System.out.println("addition");
+        double a = 0.0;
+        double b = 0.0;
         Calculator instance = new Calculator();
-
+        double expResult = 0.0;
         double result = instance.addition(a, b);
-        double expResult = 10.0;
-
         assertEquals(expResult, result, 0.0);
     }
 
